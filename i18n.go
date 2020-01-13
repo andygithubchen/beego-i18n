@@ -190,7 +190,7 @@ type Locale struct {
 
 // Tr translate content to target language.
 func (l Locale) Tr(format string, args ...interface{}) string {
-	return Tr(l.Lang, format, args...)
+	return Tr(l.Lang, format, args...) + " "
 }
 
 // Index get lang index of LangStore
